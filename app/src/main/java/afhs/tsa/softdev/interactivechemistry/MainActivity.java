@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         /*
         List of all the elements in the periodic table
         Used for interactive atom builder
-        Last updated: 12/6/2016, Srinath
+        Last updated: 12/6/2016, Srinath V
         */
 
     }
