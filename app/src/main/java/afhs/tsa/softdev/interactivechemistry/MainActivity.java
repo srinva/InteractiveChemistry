@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         int electrons; //integer value of electrons
         String element;
 
+        //Hey is this werkinggggg
+
         /*
         List of all the elements in the periodic table
         Used for interactive atom builder
