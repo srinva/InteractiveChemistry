@@ -11,9 +11,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //ALL ELEMENT CODE WILL BE MOVED TO NEW ACTIVITY
-        int protons; //integer value of protons
-
-        int electrons; //integer value of electrons
+        int protons = 0; //integer value of protons
+        int electrons = 0; //integer value of electrons
         String element;
 
         //Hey is this werkinggggg
@@ -24,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         Used for interactive atom builder
         Last updated: 12/6/2016, Srinath V
         */
+
+        if(protons == 1){
+            element = "hydrogen";
+
+        }
 
     }
 }
