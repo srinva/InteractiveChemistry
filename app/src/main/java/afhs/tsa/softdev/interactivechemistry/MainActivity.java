@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         String element;
 
         //Hey is this werkinggggg
+        //hey I hope I fixed this
 
         /*
         List of all the elements in the periodic table
