@@ -25,20 +25,19 @@ public class AtomBuilder extends AppCompatActivity {
         drag.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
 
-
-            int protons = 0; //integer value of protons
+            int protons = 1;
             int electrons = 0; //integer value of electrons
             String element; //String value of element name, will be displayed on button
 
-            if(protons==1)
-
-            {
+            if(protons==1) {
+                Button elementbutton = (Button)findViewById(R.id.elementbutton);
+                elementbutton.setText("Hydrogen");
                 element = "Hydrogen";
             }
 
-            if(protons==2)
-
-            {
+            if(protons==2) {
+                Button elementbutton = (Button)findViewById(R.id.elementbutton);
+                elementbutton.setText("Helium");
                 element = "Helium";
             }
 
@@ -393,6 +392,8 @@ public class AtomBuilder extends AppCompatActivity {
 
                     if (view3.getId() == R.id.drag){
                         state.setText("Drag has been dropped in area");
+
+                        int protons = protons + 1;
                     }
                     break;
             }
