@@ -31,4 +31,13 @@
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drag"
+        android:layout_alignEnd="@+id/drop"
+        android:layout_marginTop="81dp"
+        android:id="@+id/button" />
 </RelativeLayout>
