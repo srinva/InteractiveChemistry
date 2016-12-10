@@ -9,11 +9,10 @@ public class AtomBuilder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atom_builder);
-
-        //ALL ELEMENT CODE WILL BE MOVED TO NEW ACTIVITY
+        
         int protons = 0; //integer value of protons
         int electrons = 0; //integer value of electrons
-        String element;
+        String element; //String value of element name, will be displayed on button
 
         if (protons == 1) {
             element = "Hydrogen";
