@@ -11,16 +11,6 @@
     tools:context="afhs.tsa.softdev.interactivechemistry.AtomBuilder">
 
     <TextView
-        android:text="Drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp"
-        android:id="@+id/drag"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
-
-    <TextView
         android:text="Drop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,12 +22,23 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Button"
+    <TextView
+        android:text="Drag State"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/drag"
-        android:layout_alignEnd="@+id/drop"
-        android:layout_marginTop="81dp"
-        android:id="@+id/button" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/state"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <TextView
+        android:text="Drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
+        android:id="@+id/drag"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:layout_below="@+id/state"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class AtomBuilder extends AppCompatActivity {
 
 
-    TextView drag, drop;
+    TextView drag, drop, state;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +20,10 @@ public class AtomBuilder extends AppCompatActivity {
 
         drag = (TextView) findViewById(R.id.drag);
         drop = (TextView) findViewById(R.id.drop);
+        state = (TextView) findViewById(R.id.state);
 
         drag.setOnLongClickListener(longClickListener);
+        drop.setOnDragListener(dragListener);
 
 
             int protons = 0; //integer value of protons
@@ -374,24 +376,24 @@ public class AtomBuilder extends AppCompatActivity {
                     final View view = (View) event.getLocalState();
 
                     if (view.getId() == R.id.drag){
-                        drag.setText("Drag has entered area");
+                        state.setText("Drag has entered area");
                     }
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
 
-                    /*final View view2 = (View) event.getLocalState();
+                    final View view2 = (View) event.getLocalState();
 
                     if (view2.getId() == R.id.drag){
-                        drag.setText("Drag has exited area");
-                    }*/
+                        state.setText("Drag has exited area");
+                    }
                     break;
                 case DragEvent.ACTION_DROP:
 
-                    /*final View view3 = (View) event.getLocalState();
+                    final View view3 = (View) event.getLocalState();
 
                     if (view3.getId() == R.id.drag){
-                        drag.setText("Drag has been dropped in area");
-                    }*/
+                        state.setText("Drag has been dropped in area");
+                    }
                     break;
             }
             return true;
