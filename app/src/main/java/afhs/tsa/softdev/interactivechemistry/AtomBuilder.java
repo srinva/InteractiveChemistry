@@ -10,7 +10,9 @@ import android.widget.TextView;
 
 public class AtomBuilder extends AppCompatActivity {
 
-
+    int protons = 0;
+    int electrons = 0; //integer value of electrons
+    String element; //String value of element name, will be displayed on button
     TextView drag, drop, state;
 
     @Override
@@ -26,9 +28,8 @@ public class AtomBuilder extends AppCompatActivity {
         drag.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
 
-        int protons = 0;
-        int electrons = 0; //integer value of electrons
-        String element; //String value of element name, will be displayed on button
+
+
 
         if (protons == 1) {
             Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -392,9 +393,10 @@ public class AtomBuilder extends AppCompatActivity {
 
                         if (view3.getId() == R.id.drag) {
 
-                            state.setText("Drag has been dropped in area");
-                            int protons = 0;
-                            protons = protons + 1;
+
+                            state.setText("Protons:" + ++protons);
+
+
                         }
                         break;
                 }

@@ -33,7 +33,7 @@
         android:textAppearance="@android:style/TextAppearance.Material.Headline" />
 
     <TextView
-        android:text="Drag"
+        android:text="Proton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="146dp"
