@@ -391,6 +391,7 @@ public class AtomBuilder extends AppCompatActivity {
                         final View view3 = (View) event.getLocalState();
 
                         if (view3.getId() == R.id.drag) {
+
                             state.setText("Drag has been dropped in area");
                             int protons = 0;
                             protons = protons + 1;
