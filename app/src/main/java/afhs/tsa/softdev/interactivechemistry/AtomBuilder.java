@@ -11,7 +11,7 @@ public class AtomBuilder extends AppCompatActivity {
         setContentView(R.layout.activity_atom_builder);
 
         //ALL ELEMENT CODE WILL BE MOVED TO NEW ACTIVITY
-        int protons = 1; //integer value of protons
+        int protons = 0; //integer value of protons
         int electrons = 0; //integer value of electrons
         String element;
 

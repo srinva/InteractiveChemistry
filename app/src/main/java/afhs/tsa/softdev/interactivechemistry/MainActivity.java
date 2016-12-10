@@ -1,7 +1,10 @@
 package afhs.tsa.softdev.interactivechemistry;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,24 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //ALL ELEMENT CODE WILL BE MOVED TO NEW ACTIVITY
-        int protons = 0; //integer value of protons
-        int electrons = 0; //integer value of electrons
-        String element;
+        Button yourButton = (Button) findViewById(R.id.interchemmain);
 
-        //Hey is this werkinggggg
-        //hey I hope I fixed this
-
-        /*
-        List of all the elements in the periodic table
-        Used for interactive atom builder
-        Last updated: 12/6/2016, Srinath V
-        */
-
-        if(protons == 1){
-            element = "hydrogen";
-
-        }
-
+        yourButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, AtomBuilder.class));
+            }
+        });
     }
 }
