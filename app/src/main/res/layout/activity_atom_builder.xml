@@ -30,7 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:id="@+id/state"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+        android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
 
     <TextView
         android:text="Proton"
@@ -43,11 +43,11 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Button"
+        android:text="Unknown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/elementbutton"
         android:layout_below="@+id/state"
-        android:layout_alignEnd="@+id/drop"
-        android:layout_marginTop="51dp"
-        android:id="@+id/elementbutton" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
