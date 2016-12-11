@@ -32,16 +32,6 @@
         android:id="@+id/state"
         android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
 
-    <TextView
-        android:text="Proton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="146dp"
-        android:id="@+id/drag"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        android:layout_below="@+id/state"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:text="Unknown"
         android:layout_width="wrap_content"
@@ -50,4 +40,15 @@
         android:id="@+id/elementbutton"
         android:layout_below="@+id/state"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Proton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/drag"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:layout_below="@+id/elementbutton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/Proton"/>
 </RelativeLayout>
