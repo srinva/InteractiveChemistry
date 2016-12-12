@@ -53,6 +53,8 @@ public class AtomBuilder extends AppCompatActivity {
 
                         if (view.getId() == R.id.drag) {
                             state.setText("");
+                            drop.setBackgroundResource(R.color.colorPrimary);
+                            drop.getBackground().setAlpha(50);
                         }
                         break;
                     case DragEvent.ACTION_DRAG_EXITED:
@@ -61,6 +63,7 @@ public class AtomBuilder extends AppCompatActivity {
 
                         if (view2.getId() == R.id.drag) {
                             state.setText("");
+                            drop.getBackground().setAlpha(00);
                         }
                         break;
                     case DragEvent.ACTION_DROP:
