@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AtomBuilder"></activity>
+        <activity android:name=".Hydrogen"></activity>
     </application>
 
 </manifest>

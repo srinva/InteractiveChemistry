@@ -1,6 +1,7 @@
 package afhs.tsa.softdev.interactivechemistry;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
@@ -17,7 +18,7 @@ public class AtomBuilder extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_atom_builder);
 
@@ -73,6 +74,12 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Hydrogen");
                                 element = "Hydrogen";
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(new Intent(AtomBuilder.this, Hydrogen.class));
+                                    }
+                                });
                             }
 
                             if (protons == 2) {
