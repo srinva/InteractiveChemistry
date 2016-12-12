@@ -19,7 +19,6 @@ public class AtomBuilder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
 
-
         setContentView(R.layout.activity_atom_builder);
 
 
