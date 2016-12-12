@@ -17,7 +17,12 @@ public class AtomBuilder extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        /*savedInstanceState.putInt("protons", protons);
+        savedInstanceState.putInt("electrons", electrons);
+        savedInstanceState.putString("element", element);
+        super.onCreate(savedInstanceState);*/
+
+
         setContentView(R.layout.activity_atom_builder);
 
 
