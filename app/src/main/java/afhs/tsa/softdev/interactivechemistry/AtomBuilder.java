@@ -57,6 +57,14 @@ public class AtomBuilder extends AppCompatActivity {
                             drop.getBackground().setAlpha(50);
                         }
                         break;
+
+                    case DragEvent.ACTION_DRAG_ENDED:
+                        final View view4 = (View) event.getLocalState();
+
+                        if (view4.getId() == R.id.drag) {
+                            drop.getBackground().setAlpha(00);
+                        }
+                        break;
                     case DragEvent.ACTION_DRAG_EXITED:
 
                         final View view2 = (View) event.getLocalState();
