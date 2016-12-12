@@ -15,14 +15,7 @@ public class Hydrogen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        /*public void onRestoreInstanceState(Bundle savedInstanceState) {
-            super.onRestoreInstanceState(savedInstanceState);
-            // Restore UI state from the savedInstanceState.
-            // This bundle has also been passed to onCreate.
-            int electrons = savedInstanceState.getInt("electrons");
-            int protons = savedInstanceState.getInt("protons");
-            String elements = savedInstanceState.getString("elements");
-        }*/
+
 
         setContentView(R.layout.activity_hydrogen);
 
