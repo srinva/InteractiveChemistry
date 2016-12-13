@@ -58,6 +58,7 @@ public class AtomBuilder extends AppCompatActivity {
                             state.setText("");
                             drop.setBackgroundResource(R.color.colorPrimary);
                             drop.getBackground().setAlpha(50);
+                            state.setText("Protons: "+protons);
                         }
                         break;
 
@@ -66,6 +67,7 @@ public class AtomBuilder extends AppCompatActivity {
 
                         if (view4.getId() == R.id.imageView2) {
                             drop.getBackground().setAlpha(00);
+                            state.setText("Protons: "+protons);
                         }
                         break;
                     case DragEvent.ACTION_DRAG_EXITED:
@@ -75,6 +77,7 @@ public class AtomBuilder extends AppCompatActivity {
                         if (view2.getId() == R.id.imageView2) {
                             state.setText("");
                             drop.getBackground().setAlpha(00);
+                            state.setText("Protons: "+protons);
                         }
                         break;
                     case DragEvent.ACTION_DROP:
@@ -83,6 +86,8 @@ public class AtomBuilder extends AppCompatActivity {
                         if (view3.getId() == R.id.imageView2) {
 
                             protons ++;
+
+                            state.setText("Protons: "+protons);
 
                             if (protons == 1) {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);

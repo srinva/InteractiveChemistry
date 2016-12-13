@@ -23,25 +23,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="Drag State"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:id="@+id/state"
-        android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
-
-    <Button
-        android:text="Unknown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:id="@+id/elementbutton"
-        android:layout_below="@+id/state"
-        android:layout_centerHorizontal="true" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,4 +32,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
         android:padding="15dp" />
+
+    <TextView
+        android:text="Protons: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/state"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <Button
+        android:text="Unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/elementbutton"
+        android:layout_below="@+id/state"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
