@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AtomBuilder extends AppCompatActivity {
@@ -14,8 +15,8 @@ public class AtomBuilder extends AppCompatActivity {
     int protons = 0;
     int electrons = 0; //integer value of electrons
     String element; //String value of element name, will be displayed on button
-    TextView drag, drop, state;
-
+    TextView drop, state;
+    ImageView pro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +24,14 @@ public class AtomBuilder extends AppCompatActivity {
         setContentView(R.layout.activity_atom_builder);
 
 
-        drag = (TextView) findViewById(R.id.drag);
+
         drop = (TextView) findViewById(R.id.drop);
         state = (TextView) findViewById(R.id.state);
+        pro = (ImageView) findViewById(R.id.imageView2);
 
-        drag.setOnLongClickListener(longClickListener);
+        pro.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
+
 
     }
 
@@ -51,7 +54,7 @@ public class AtomBuilder extends AppCompatActivity {
                     case DragEvent.ACTION_DRAG_ENTERED:
                         final View view = (View) event.getLocalState();
 
-                        if (view.getId() == R.id.drag) {
+                        if (view.getId() == R.id.imageView2) {
                             state.setText("");
                             drop.setBackgroundResource(R.color.colorPrimary);
                             drop.getBackground().setAlpha(50);
@@ -61,7 +64,7 @@ public class AtomBuilder extends AppCompatActivity {
                     case DragEvent.ACTION_DRAG_ENDED:
                         final View view4 = (View) event.getLocalState();
 
-                        if (view4.getId() == R.id.drag) {
+                        if (view4.getId() == R.id.imageView2) {
                             drop.getBackground().setAlpha(00);
                         }
                         break;
@@ -69,7 +72,7 @@ public class AtomBuilder extends AppCompatActivity {
 
                         final View view2 = (View) event.getLocalState();
 
-                        if (view2.getId() == R.id.drag) {
+                        if (view2.getId() == R.id.imageView2) {
                             state.setText("");
                             drop.getBackground().setAlpha(00);
                         }
@@ -77,7 +80,7 @@ public class AtomBuilder extends AppCompatActivity {
                     case DragEvent.ACTION_DROP:
 
                         final View view3 = (View) event.getLocalState();
-                        if (view3.getId() == R.id.drag) {
+                        if (view3.getId() == R.id.imageView2) {
 
                             protons ++;
 

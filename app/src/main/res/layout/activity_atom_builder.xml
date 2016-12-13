@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_atom_builder"
     android:layout_width="match_parent"
@@ -11,7 +12,7 @@
     tools:context="afhs.tsa.softdev.interactivechemistry.AtomBuilder">
 
     <TextView
-        android:text="Drop"
+        android:text="Nucleus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="47dp"
@@ -32,16 +33,6 @@
         android:id="@+id/state"
         android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
 
-    <TextView
-        android:text="Proton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="146dp"
-        android:id="@+id/drag"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        android:layout_below="@+id/state"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:text="Unknown"
         android:layout_width="wrap_content"
@@ -50,4 +41,14 @@
         android:id="@+id/elementbutton"
         android:layout_below="@+id/state"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/protonplace"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/elementbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:padding="15dp" />
 </RelativeLayout>
