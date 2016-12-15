@@ -521,6 +521,30 @@ public class AtomBuilder extends AppCompatActivity {
                                 element = "Xenon";
                             }
 
+                            if (protons == 55)
+
+                            {
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.setText("Caesium");
+                                element = "Caesium";
+                            }
+
+                            if (protons == 56)
+
+                            {
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.setText("Barium");
+                                element = "Barium";
+                            }
+
+                            if (protons == 55)
+
+                            {
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.setText("Lanthanum");
+                                element = "Lanthanum";
+                            }
+
                         }
                         break;
                 }
