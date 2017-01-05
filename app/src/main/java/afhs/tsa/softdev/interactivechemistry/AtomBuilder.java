@@ -622,6 +622,66 @@ public class AtomBuilder extends AppCompatActivity {
                                 elementbutton.settext("Ytterbium");
                                 element = "Ytterbium";
                             }
+                            
+                            if (protons == 71){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Lutetium");
+                                element = "Lutetium";
+                            }
+                            
+                            if (protons == 72){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Hafnium");
+                                element = "Hafnium";
+                            }
+                            
+                            if (protons == 73){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Tantalum");
+                                element = "Tantalum";
+                            }
+                            
+                            if (protons == 74){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Tungsten");
+                                element = "Tungsten";
+                            }
+                            
+                            if (protons == 75){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Rhenium");
+                                element = "Rhenium";
+                            }
+                            
+                            if (protons == 76){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Osmium");
+                                element = "Osmium";
+                            }
+                            
+                            if (protons == 77){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Iridium");
+                                element = "Iridium";
+                            }
+                            
+                            if (protons == 78){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Platinum");
+                                element = "Platinum";
+                            }
+                            
+                            if (protons == 79){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Gold");
+                                element = "Gold";
+                            }
+                            
+                            if (protons == 80){
+                                Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                elementbutton.settext("Mercury");
+                                element = "Mercury";
+                            }
 
                         }
                         break;
