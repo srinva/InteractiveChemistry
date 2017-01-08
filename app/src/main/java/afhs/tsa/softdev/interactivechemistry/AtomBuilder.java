@@ -12,8 +12,10 @@ import android.widget.TextView;
 
 public class AtomBuilder extends AppCompatActivity {
 
+    private Intent save;
     int protons = 0;
-    int electrons = 0; //integer value of electrons
+    int electrons = 0;
+    int neutrons = 0;
     String element; //String value of element name, will be displayed on button
     TextView drop, state;
     ImageView pro;
@@ -23,6 +25,7 @@ public class AtomBuilder extends AppCompatActivity {
 
         setContentView(R.layout.activity_atom_builder);
 
+        save = new Intent(this, ElementInformation.class);
 
 
         drop = (TextView) findViewById(R.id.drop);
@@ -32,15 +35,14 @@ public class AtomBuilder extends AppCompatActivity {
         pro.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
 
-        /*This is for saving proton, neutron, and electron vals   -Srinath
-        Intent myIntent = new Intent(AtomBuilder.this, ElementInformation.class);
-        myIntent.putExtra("PROTONS", protons);
-        startActivity(myIntent);
-        //This is for saving proton, neutron, and electron vals   -Srinath*/
+
 
     }
 
-        View.OnLongClickListener longClickListener = new View.OnLongClickListener() {
+
+
+
+    View.OnLongClickListener longClickListener = new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData data = ClipData.newPlainText("", "");
@@ -98,10 +100,12 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Hydrogen");
                                 element = "Hydrogen";
+
+                                save.putExtra("PROTONS", protons);
                                 Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
                                 goToHydrogen.setOnClickListener(new View.OnClickListener() {
                                     public void onClick(View v) {
-                                        startActivity(new Intent(AtomBuilder.this, ElementInformation.class));
+                                        startActivity(save);
                                     }
                                 });
                             }
@@ -110,6 +114,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Helium");
                                 element = "Helium";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 3) {

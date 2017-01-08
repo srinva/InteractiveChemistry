@@ -25,18 +25,15 @@ public class ElementInformation extends AppCompatActivity {
             }
         });
 
-        /*This is for saving proton, neutron, and electron vals   -Srinath
-        Intent intent = getIntent();
-        int protons = intent.getIntExtra("PROTONS", 0);
+        //This is for saving proton, neutron, and electron vals   -Srinath
 
-        TextView testing = (TextView) findViewById(R.id.testing);
+        Bundle extras = getIntent().getExtras();
 
-        if (protons == 1){
-            testing.setText(""+protons);
-        }
-        //This is for saving proton, neutron, and electron vals   -Srinath*/
+        int protons = (extras.getInt("PROTONS"));
 
-        int protons = 1;
+        //This is for saving proton, neutron, and electron vals   -Srinath
+
+
 
         if (protons == 1) {
             setContentView(hydrogeninfo);
