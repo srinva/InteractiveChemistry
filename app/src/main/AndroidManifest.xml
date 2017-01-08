@@ -15,8 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AtomBuilder"></activity>
-        <activity android:name=".Hydrogen"></activity>
+        <activity android:name=".AtomBuilder" />
+
+        <activity android:name=".ElementInformation"></activity>
     </application>
 
 </manifest>

@@ -23,32 +23,62 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/protonplace"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/elementbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        android:padding="15dp" />
-
     <TextView
-        android:text="Protons: "
+        android:text="Atom Builder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:id="@+id/state"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Unknown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:id="@+id/elementbutton"
-        android:layout_below="@+id/state"
+        android:layout_marginBottom="89dp"
+        android:layout_above="@+id/drop"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Protons: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/realproton"
+        android:id="@+id/imageView2"
+        android:padding="15dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Electrons:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/estate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_alignBaseline="@+id/state"
+        android:layout_alignBottom="@+id/state"
+        android:layout_toStartOf="@+id/drop" />
+
+    <TextView
+        android:text="Neutrons:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state"
+        android:layout_alignStart="@+id/elementbutton"
+        android:id="@+id/nstate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu" />
+
 </RelativeLayout>
