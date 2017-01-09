@@ -17,8 +17,8 @@ public class AtomBuilder extends AppCompatActivity {
     int electrons = 0;
     int neutrons = 0;
     String element; //String value of element name, will be displayed on button
-    TextView drop, state;
-    ImageView pro;
+    TextView drop, state, estate, nstate;
+    ImageView pro, neu, ele;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +29,18 @@ public class AtomBuilder extends AppCompatActivity {
 
 
         drop = (TextView) findViewById(R.id.drop);
+        estate = (TextView) findViewById(R.id.estate);
         state = (TextView) findViewById(R.id.state);
+        nstate = (TextView) findViewById(R.id.nstate);
+        ele = (ImageView) findViewById(R.id.imageView);
         pro = (ImageView) findViewById(R.id.imageView2);
+        neu = (ImageView) findViewById(R.id.imageView3);
 
+
+        ele.setOnLongClickListener(longClickListener);
         pro.setOnLongClickListener(longClickListener);
+        neu.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
-
-
 
     }
 
@@ -61,35 +66,85 @@ public class AtomBuilder extends AppCompatActivity {
                     case DragEvent.ACTION_DRAG_ENTERED:
                         final View view = (View) event.getLocalState();
 
+                        if (view.getId() == R.id.imageView)  {
+                            drop.setBackgroundResource(R.color.colorPrimary);
+                            drop.getBackground().setAlpha(50);
+                            estate.setText("Electrons: "+electrons);
+                        }
+
                         if (view.getId() == R.id.imageView2) {
-                            state.setText("");
                             drop.setBackgroundResource(R.color.colorPrimary);
                             drop.getBackground().setAlpha(50);
                             state.setText("Protons: "+protons);
+                        }
+
+                        if (view.getId() == R.id.imageView3)  {
+                            drop.setBackgroundResource(R.color.colorPrimary);
+                            drop.getBackground().setAlpha(50);
+                            nstate.setText("Neutrons: "+neutrons);
                         }
                         break;
 
                     case DragEvent.ACTION_DRAG_ENDED:
                         final View view4 = (View) event.getLocalState();
 
+                        if (view4.getId() == R.id.imageView) {
+                            drop.getBackground().setAlpha(00);
+                            estate.setText("Electrons: "+electrons);
+                        }
+
                         if (view4.getId() == R.id.imageView2) {
                             drop.getBackground().setAlpha(00);
                             state.setText("Protons: "+protons);
+                        }
+
+                        if (view4.getId() == R.id.imageView3) {
+                            drop.getBackground().setAlpha(00);
+                            nstate.setText("Neutrons: "+neutrons);
                         }
                         break;
                     case DragEvent.ACTION_DRAG_EXITED:
 
                         final View view2 = (View) event.getLocalState();
 
+                        if (view2.getId() == R.id.imageView) {
+                            state.setText("");
+                            drop.getBackground().setAlpha(00);
+                            estate.setText("Electrons: "+electrons);
+                        }
+
                         if (view2.getId() == R.id.imageView2) {
                             state.setText("");
                             drop.getBackground().setAlpha(00);
                             state.setText("Protons: "+protons);
                         }
+
+                        if (view2.getId() == R.id.imageView3) {
+                            state.setText("");
+                            drop.getBackground().setAlpha(00);
+                            nstate.setText("Neutrons: "+neutrons);
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
 
                         final View view3 = (View) event.getLocalState();
+
+                        if (view3.getId() == R.id.imageView3) {
+
+                            neutrons++;
+
+                            nstate.setText("Neutrons: "+neutrons);
+
+                        }
+
+                        if (view3.getId() == R.id.imageView) {
+
+                            electrons++;
+
+                            estate.setText("Electrons: "+electrons);
+
+                        }
+
                         if (view3.getId() == R.id.imageView2) {
 
                             protons ++;
@@ -617,151 +672,154 @@ public class AtomBuilder extends AppCompatActivity {
                                 elementbutton.setText("Lanthanum");
                                 element = "Lanthanum";
                             }
-                            
+
                             if (protons == 58){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Cerium");
                                 element = "Cerium";
                             }
-                            
+
                             if (protons == 59){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Praseodymium");
                                 element = "Praseodymium";
                             }
-                            
-                             if (protons == 60){
+
+                            if (protons == 60){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Neodymium");
                                 element = "Neodymium";
                             }
-                            
-                             if (protons == 61){
+
+                            if (protons == 61){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Promethium");
                                 element = "	Promethium	";
                             }
-                            
+
                             if (protons == 62){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Samarium");
                                 element = "Samarium";
                             }
-                            
+
                             if (protons == 63){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Europium");
                                 element = "Europium";
                             }
-                            
+
                             if (protons == 64){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Gadolinium");
                                 element = "Gadolinium";
                             }
-                            
+
                             if (protons == 65){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Terbium");
                                 element = "Terbium";
                             }
-                            
+
                             if (protons == 66){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Dysprosium");
                                 element = "Dysprosium";
                             }
-                            
+
                             if (protons == 67){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Holmium");
                                 element = "Holmium";
                             }
-                            
+
                             if (protons == 68){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Erbium");
                                 element = "Erbium";
                             }
-                            
+
                             if (protons == 69){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Thulium");
                                 element = "Thulium";
                             }
-                            
+
                             if (protons == 70){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Ytterbium");
                                 element = "Ytterbium";
                             }
-                            
+
                             if (protons == 71){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Lutetium");
                                 element = "Lutetium";
                             }
-                            
+
                             if (protons == 72){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Hafnium");
                                 element = "Hafnium";
                             }
-                            
+
                             if (protons == 73){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Tantalum");
                                 element = "Tantalum";
                             }
-                            
+
                             if (protons == 74){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Tungsten");
                                 element = "Tungsten";
                             }
-                            
+
                             if (protons == 75){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Rhenium");
                                 element = "Rhenium";
                             }
-                            
+
                             if (protons == 76){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Osmium");
                                 element = "Osmium";
                             }
-                            
+
                             if (protons == 77){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Iridium");
                                 element = "Iridium";
                             }
-                            
+
                             if (protons == 78){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Platinum");
                                 element = "Platinum";
                             }
-                            
+
                             if (protons == 79){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Gold");
                                 element = "Gold";
                             }
-                            
+
                             if (protons == 80){
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Mercury");
                                 element = "Mercury";
                             }
-
                         }
                         break;
                 }
                 return true;
             }
+
+
         };
+
+
 
 
 

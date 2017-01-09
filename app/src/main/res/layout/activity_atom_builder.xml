@@ -20,45 +20,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="Protons: "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/state"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2" />
-
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/realproton"
-        android:id="@+id/imageView2"
-        android:padding="15dp"
-        android:layout_marginTop="42dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="Electrons:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/estate"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
-        android:layout_alignBaseline="@+id/state"
-        android:layout_alignBottom="@+id/state"
-        android:layout_toStartOf="@+id/drop" />
-
-    <TextView
-        android:text="Neutrons:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/state"
-        android:layout_alignStart="@+id/elementbutton"
-        android:id="@+id/nstate"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu" />
 
     <TextView
         android:text="Nucleus"
@@ -80,5 +41,63 @@
         android:layout_marginBottom="48dp"
         android:layout_above="@+id/drop"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/finalproton"
+        android:id="@+id/imageView2"
+        android:padding="15dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/drop"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:text="Protons: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:text="Neutrons:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nstate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_alignBaseline="@+id/state"
+        android:layout_alignBottom="@+id/state"
+        android:layout_alignStart="@+id/elementbutton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/finalneutron"
+        android:padding="15dp"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/nstate"
+        android:layout_alignStart="@+id/nstate" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/finalelectron"
+        android:padding="15dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/estate" />
+
+    <TextView
+        android:text="Electrons:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/estate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp" />
 
 </RelativeLayout>
