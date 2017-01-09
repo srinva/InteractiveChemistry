@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import static afhs.tsa.softdev.interactivechemistry.R.layout.heliuminfo;
 import static afhs.tsa.softdev.interactivechemistry.R.layout.hydrogeninfo;
+import static afhs.tsa.softdev.interactivechemistry.R.layout.lithiuminfo;
 
 public class ElementInformation extends AppCompatActivity {
 
@@ -48,6 +49,17 @@ public class ElementInformation extends AppCompatActivity {
 
         if (protons == 2) {
             setContentView(heliuminfo);
+            Button elementButton = (Button) findViewById(R.id.elementback);
+            elementButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    startActivity(new Intent(ElementInformation.this, AtomBuilder.class));
+                }
+            });
+
+        }
+
+        if (protons == 3) {
+            setContentView(lithiuminfo);
             Button elementButton = (Button) findViewById(R.id.elementback);
             elementButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {

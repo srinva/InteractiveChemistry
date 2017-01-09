@@ -128,6 +128,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Lithium");
                                 element = "Lithium";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 4)
@@ -136,6 +144,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Beryllium");
                                 element = "Beryllium";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 5)
@@ -144,6 +160,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Boron");
                                 element = "Boron";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 6)
@@ -152,6 +176,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Carbon");
                                 element = "Carbon";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 7)
@@ -160,6 +192,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Nitrogen");
                                 element = "Nitrogen";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 8)
@@ -168,6 +208,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Oxygen");
                                 element = "Oxygen";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 9)
@@ -176,6 +224,14 @@ public class AtomBuilder extends AppCompatActivity {
                                 Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                 elementbutton.setText("Flourine");
                                 element = "Fluorine";
+
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
                             }
 
                             if (protons == 10)
