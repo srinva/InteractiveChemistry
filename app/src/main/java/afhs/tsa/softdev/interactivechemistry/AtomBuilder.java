@@ -136,6 +136,10 @@ public class AtomBuilder extends AppCompatActivity {
 
                             nstate.setText("Neutrons: " + neutrons);
 
+                            if (protons == 1) {
+                                atomstatus.setText("Your atom is stable");
+                            }
+
                             if (protons == 2) {
                                 int heliume = 2;
                                 if (neutrons == heliume) {
@@ -157,9 +161,84 @@ public class AtomBuilder extends AppCompatActivity {
                                 }
                             }
 
-                            if (protons == 3) {
-                                int ber = 1;
+                            if (protons == 4) {
+                                int berylliumn = 5;
+                                if (neutrons == berylliumn){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
                             }
+
+                            if (protons == 5) {
+                                int boronn1 = 5;
+                                int boronn2 = 6;
+                                if (neutrons == boronn1 || neutrons == boronn2){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 6) {
+                                int carbonn1 = 6;
+                                int carbonn2 = 7;
+                                if (neutrons == carbonn1 || neutrons == carbonn2){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 7) {
+                                int nitrogenn1 = 7;
+                                int nitrogenn2 = 8;
+                                if (neutrons == nitrogenn1 || neutrons == nitrogenn2){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 8) {
+                                int oxygenn1 = 8;
+                                int oxygenn2 = 9;
+                                int oxygenn3 = 10;
+                                if (neutrons == oxygenn1 || neutrons == oxygenn2 || neutrons == oxygenn3){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 9) {
+                                int fluorine = 10;
+                                if (neutrons == fluorine){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 10) {
+                                int neonn1 = 10;
+                                int neonn2 = 11;
+                                int neonn3 = 12;
+                                if (neutrons == neonn1 || neutrons == neonn2 || neutrons == neonn3){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+
 
                         }
 
