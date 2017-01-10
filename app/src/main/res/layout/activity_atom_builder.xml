@@ -100,7 +100,7 @@
         android:layout_alignStart="@+id/elementbutton" />
 
     <TextView
-        android:text="unknown"
+        android:text="Your atom is unstable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/elementbutton"

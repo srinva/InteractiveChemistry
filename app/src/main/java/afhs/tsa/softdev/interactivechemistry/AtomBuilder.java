@@ -136,16 +136,9 @@ public class AtomBuilder extends AppCompatActivity {
 
                             nstate.setText("Neutrons: " + neutrons);
 
-                        }
-
-                        if (view3.getId() == R.id.imageView) {
-
-                            electrons++;
-                            estate.setText("Electrons: " + electrons);
-
                             if (protons == 2) {
                                 int heliume = 2;
-                                if (electrons == heliume) {
+                                if (neutrons == heliume) {
                                     atomstatus.setText("Your atom is stable");
                                 }
                                 else{
@@ -156,13 +149,24 @@ public class AtomBuilder extends AppCompatActivity {
                             if (protons == 3) {
                                 int lithiume1 = 3;
                                 int lithiume2 = 4;
-                                if (electrons == lithiume1 || electrons == lithiume2) {
+                                if (neutrons == lithiume1 || neutrons == lithiume2) {
                                     atomstatus.setText("Your atom is stable");
                                 }
                                 else{
                                     atomstatus.setText("Your atom is unstable");
                                 }
                             }
+
+                            if (protons == 3) {
+                                int ber = 1;
+                            }
+
+                        }
+
+                        if (view3.getId() == R.id.imageView) {
+
+                            electrons++;
+                            estate.setText("Electrons: " + electrons);
 
                         }
 
