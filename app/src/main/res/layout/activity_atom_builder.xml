@@ -57,20 +57,10 @@
         android:text="Protons: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/state"
+        android:id="@+id/atomstatus"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
         android:layout_below="@+id/imageView2"
         android:layout_alignStart="@+id/imageView2" />
-
-    <TextView
-        android:text="Neutrons:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nstate"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
-        android:layout_alignBaseline="@+id/state"
-        android:layout_alignBottom="@+id/state"
-        android:layout_alignStart="@+id/elementbutton" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -99,5 +89,22 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentStart="true"
         android:layout_marginStart="19dp" />
+
+    <TextView
+        android:text="Neutrons:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nstate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_alignTop="@+id/atomstatus"
+        android:layout_alignStart="@+id/elementbutton" />
+
+    <TextView
+        android:text="unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/elementbutton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/atomstate" />
 
 </RelativeLayout>
