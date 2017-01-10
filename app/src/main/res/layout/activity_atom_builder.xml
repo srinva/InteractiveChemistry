@@ -103,8 +103,16 @@
         android:text="Your atom is unstable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/atomstate"
         android:layout_alignBottom="@+id/elementbutton"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/atomstate" />
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Your atom is not charged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charge"
+        android:layout_below="@+id/atomstate"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

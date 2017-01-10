@@ -17,7 +17,7 @@ public class AtomBuilder extends AppCompatActivity {
     int electrons = 0;
     int neutrons = 0;
     String element; //String value of element name, will be displayed on button
-    TextView drop, state, estate, nstate, atomstatus;
+    TextView drop, state, estate, nstate, atomstatus, charge;
     ImageView pro, neu, ele;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class AtomBuilder extends AppCompatActivity {
         state = (TextView) findViewById(R.id.atomstatus);
         nstate = (TextView) findViewById(R.id.nstate);
         atomstatus = (TextView)findViewById(R.id.atomstate);
+        charge = (TextView)findViewById(R.id.charge);
         ele = (ImageView) findViewById(R.id.imageView);
         pro = (ImageView) findViewById(R.id.imageView2);
         neu = (ImageView) findViewById(R.id.imageView3);
@@ -247,11 +248,26 @@ public class AtomBuilder extends AppCompatActivity {
                             electrons++;
                             estate.setText("Electrons: " + electrons);
 
+                            if (electrons == protons){
+                                charge.setText("Your atom is neutrally charged");
+                            }else if (electrons > protons){
+                                charge.setText("Your atom is negatively charged");
+                            }else {
+                                charge.setText("Your atom is positively charged");
+                            }
+
                         }
 
                             if (view3.getId() == R.id.imageView2) {
 
                                 protons++;
+                                if (electrons == protons){
+                                    charge.setText("Your atom is neutrally charged");
+                                }else if (electrons > protons){
+                                    charge.setText("Your atom is negatively charged");
+                                }else {
+                                    charge.setText("Your atom is positively charged");
+                                }
 
                                 state.setText("Protons: " + protons);
 
