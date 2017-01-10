@@ -14,7 +14,12 @@ import static afhs.tsa.softdev.interactivechemistry.R.layout.lithiuminfo;
 
 public class ElementInformation extends AppCompatActivity {
 
-    @Override
+    View.OnClickListener finishActivityListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+            finish();
+        }
+    };
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_element_information);
@@ -39,33 +44,21 @@ public class ElementInformation extends AppCompatActivity {
         if (protons == 1) {
             setContentView(hydrogeninfo);
             Button elementButton = (Button) findViewById(R.id.elementback);
-            elementButton.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    startActivity(new Intent(ElementInformation.this, AtomBuilder.class));
-                }
-            });
+            elementButton.setOnClickListener(finishActivityListener);
 
         }
 
         if (protons == 2) {
             setContentView(heliuminfo);
             Button elementButton = (Button) findViewById(R.id.elementback);
-            elementButton.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    startActivity(new Intent(ElementInformation.this, AtomBuilder.class));
-                }
-            });
+            elementButton.setOnClickListener(finishActivityListener);
 
         }
 
         if (protons == 3) {
             setContentView(lithiuminfo);
             Button elementButton = (Button) findViewById(R.id.elementback);
-            elementButton.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    startActivity(new Intent(ElementInformation.this, AtomBuilder.class));
-                }
-            });
+            elementButton.setOnClickListener(finishActivityListener);
 
         }
 
