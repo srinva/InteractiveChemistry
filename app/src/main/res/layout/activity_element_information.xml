@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_element_information"
     android:layout_width="match_parent"
@@ -10,22 +11,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="afhs.tsa.softdev.interactivechemistry.ElementInformation">
 
-    <Button
-        android:text="Button"
+    <TextView
+        android:text="Element Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginBottom="498dp"
-        android:id="@+id/back" />
+        android:id="@+id/elementName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <TextView
-        android:text="TESTING   -Srinath"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:id="@+id/testing"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:text="Element Information"
+        android:layout_width="350px"
+        android:layout_height="300px"
+        android:layout_marginTop="15dp"
+        android:id="@+id/elementInfoTop"
+        android:layout_below="@+id/elementName"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="315px"
+        android:layout_height="300px"
+        app:srcCompat="@color/colorAccent"
+        android:id="@+id/elementPicture"
+        android:layout_alignTop="@+id/elementInfoTop"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Element Information"
+        android:layout_width="1000px"
+        android:layout_height="1000px"
+        android:layout_below="@+id/elementPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/elementInfoBottom" />
+
 </RelativeLayout>

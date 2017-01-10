@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button yourButton = (Button) findViewById(R.id.interchemmain);
+        Button yourButton = (Button) findViewById(R.id.interchemmain); //This button goes to the Atom Builder
 
         yourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

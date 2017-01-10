@@ -27,6 +27,14 @@ public class AtomBuilder extends AppCompatActivity {
 
         save = new Intent(this, ElementInformation.class);
 
+        Button atomBuilderBack = (Button) findViewById(R.id.atombuilderback);
+
+        atomBuilderBack.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(AtomBuilder.this, MainActivity.class));
+                finish();
+            }
+        });
 
         drop = (TextView) findViewById(R.id.drop);
         estate = (TextView) findViewById(R.id.estate);
@@ -45,7 +53,6 @@ public class AtomBuilder extends AppCompatActivity {
         drop.setOnDragListener(dragListener);
 
     }
-
 
 
 

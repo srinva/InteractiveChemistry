@@ -65,15 +65,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/finalneutron"
-        android:padding="15dp"
-        android:id="@+id/imageView3"
-        android:layout_above="@+id/nstate"
-        android:layout_alignStart="@+id/nstate" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@drawable/finalelectron"
         android:padding="15dp"
         android:id="@+id/imageView"
@@ -113,6 +104,24 @@
         android:layout_height="wrap_content"
         android:id="@+id/charge"
         android:layout_below="@+id/atomstate"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/finalneutron"
+        android:padding="15dp"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/nstate"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:layout_height="75px"
+        android:id="@+id/atombuilderback"
+        android:background="@drawable/homebutton"
+        android:elevation="0dp"
+        android:layout_width="75px"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>
