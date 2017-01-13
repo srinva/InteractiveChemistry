@@ -8,20 +8,21 @@ import android.widget.Button;
 
 public class DictionaryActivity extends AppCompatActivity {
     int protons = 0;
-    Intent gotoElement = new Intent (this, ElementInformation.class);
+    private Intent gotoElement; 
         
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dictionary);
         
+        Intent = new Intent (this, ElementInformation.class);
         Button hydrogen = (Button) findViewById(R.id.hydrogendiction);
 
         hydrogen.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(DictionaryActivity.this, AtomBuilder.class));
                 view.getContext().startActivity(gotoElement);
-                protons = "protons" + 1;
+                protons = "protons " + 1;
                 finish();
             }
         });
