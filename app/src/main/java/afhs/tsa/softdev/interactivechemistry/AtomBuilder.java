@@ -246,6 +246,128 @@ public class AtomBuilder extends AppCompatActivity {
                                 }
                             }
 
+                            if (protons == 11) {
+                                int sodiumn = 12;
+                                if (neutrons == sodiumn ){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 12) {
+                                int magnesiumn1 = 12;
+                                int magnesiumn2 = 13;
+                                int magnesiumn3 = 14;
+                                if (neutrons == magnesiumn1 || neutrons == magnesiumn2 || neutrons == magnesiumn3){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 13) {
+                                int aluminiumn = 14;
+                                if (neutrons == aluminiumn){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 14) {
+                                int siliconn1 = 14;
+                                int siliconn2 = 15;
+                                int siliconn3 = 16;
+                                if (neutrons == siliconn1 || neutrons == siliconn2 || neutrons == siliconn3){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 15) {
+                                int phosphorusn = 16;
+                                if (neutrons == phosphorusn){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 16) {
+                                int sulfurn1 = 16;
+                                int sulfurn2 = 17;
+                                int sulfurn3 = 18;
+                                if (neutrons == sulfurn1 || neutrons == sulfurn2 || neutrons == sulfurn3){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 17) {
+                                int chlorinen = 18;
+                                if (neutrons == chlorinen){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 18) {
+                                int argonn1 = 18;
+                                int argonn2 = 20;
+                                int argonn3 = 22;
+                                if (neutrons == argonn1 || neutrons == argonn2 || neutrons == argonn3){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 19) {
+                                int potassiumn1 = 20;
+                                int potassiumn2 = 22;
+                                if (neutrons == potassiumn1 || neutrons == potassiumn2){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 20) {
+                                int calciumn1 = 20;
+                                int calciumn2 = 22;
+                                int calciumn3 = 23;
+                                int calciumn4 = 24;
+                                int calciumn5 = 26;
+                                if (neutrons == calciumn1 || neutrons == calciumn2 || neutrons == calciumn3 || neutrons == calciumn4 || neutrons == calciumn5){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
+
+                            if (protons == 21) {
+                                int scandiumn = 24;
+                                if (neutrons == scandiumn){
+                                    atomstatus.setText("Your atom is stable");
+                                }
+                                else{
+                                    atomstatus.setText("Your atom is unstable");
+                                }
+                            }
 
 
                         }
@@ -268,11 +390,11 @@ public class AtomBuilder extends AppCompatActivity {
                             if (view3.getId() == R.id.imageView2) {
 
                                 protons++;
-                                if (electrons == protons){
+                                if (electrons == protons) {
                                     charge.setText("Your atom is neutrally charged");
-                                }else if (electrons > protons){
+                                } else if (electrons > protons) {
                                     charge.setText("Your atom is negatively charged");
-                                }else {
+                                } else {
                                     charge.setText("Your atom is positively charged");
                                 }
 
@@ -936,7 +1058,66 @@ public class AtomBuilder extends AppCompatActivity {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Mercury");
                                     element = "Mercury";
+                                }
 
+                                if (protons == 81) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Thallium");
+                                    element = "Thallium";
+                                }
+
+                                if (protons == 82) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Lead");
+                                    element = "Lead";
+                                }
+
+                                if (protons == 83) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Bismuth");
+                                    element = "Bismuth";
+                                }
+
+                                if (protons == 84) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Polonium");
+                                    element = "Polonium";
+                                }
+
+                                if (protons == 85) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Astatine");
+                                    element = "Astatine";
+                                }
+
+                                if (protons == 86) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Radon");
+                                    element = "Radon";
+                                }
+
+                                if (protons == 87) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Francium");
+                                    element = "Francium";
+                                }
+
+                                if (protons == 88) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Radium");
+                                    element = "Radium";
+                                }
+
+                                if (protons == 89) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Actinium");
+                                    element = "Actinium";
+                                }
+
+                                if (protons == 90) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Thorium");
+                                    element = "Thorium";
                                 }
                             }
                             break;
@@ -946,7 +1127,7 @@ public class AtomBuilder extends AppCompatActivity {
 
             };
 
-        };
+        }
 
 
 

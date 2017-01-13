@@ -13,12 +13,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button yourButton = (Button) findViewById(R.id.interchemmain); //This button goes to the Atom Builder
+                Button dictionary = (Button) findViewById(R.id.dictionary); //This button goes to the Dictionary
 
-        yourButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, AtomBuilder.class));
+                dictionary.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        startActivity(new Intent(MainActivity.this, DictionaryActivity.class));
+                    }
+                });
+
+                Button interchemmain = (Button) findViewById(R.id.interchemmain); //This button goes to the Atom Builder
+
+                interchemmain.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        startActivity(new Intent(MainActivity.this, AtomBuilder.class));
+                    }
+                });
             }
-        });
-    }
-}
+        }
+

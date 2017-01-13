@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AtomBuilder" />
-
-        <activity android:name=".ElementInformation"></activity>
+        <activity android:name=".ElementInformation" />
+        <activity android:name=".DictionaryActivity"></activity>
     </application>
 
 </manifest>
