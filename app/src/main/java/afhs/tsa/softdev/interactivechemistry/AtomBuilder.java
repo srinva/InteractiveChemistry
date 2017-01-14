@@ -120,6 +120,7 @@ public class AtomBuilder extends AppCompatActivity {
                             state.setText("");
                             drop.getBackground().setAlpha(00);
                             estate.setText("Electrons: " + electrons);
+                            state.setText("Protons: " + protons);
                         }
 
                         if (view2.getId() == R.id.imageView2) {
@@ -132,6 +133,7 @@ public class AtomBuilder extends AppCompatActivity {
                             state.setText("");
                             drop.getBackground().setAlpha(00);
                             nstate.setText("Neutrons: " + neutrons);
+                            state.setText("Protons: " + protons);
                         }
                         break;
                     case DragEvent.ACTION_DROP:
@@ -414,7 +416,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 2) {
+                                else if (protons == 2) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Helium");
                                     element = "Helium";
@@ -428,7 +430,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 3) {
+                                else if (protons == 3) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Lithium");
                                     element = "Lithium";
@@ -442,7 +444,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 4)
+                                else if (protons == 4)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -458,7 +460,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 5)
+                                else if (protons == 5)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -474,7 +476,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 6)
+                                else if (protons == 6)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -490,7 +492,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 7)
+                                else if (protons == 7)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -506,7 +508,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 8)
+                                else if (protons == 8)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -522,7 +524,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 9)
+                                else if (protons == 9)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -538,7 +540,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     });
                                 }
 
-                                if (protons == 10)
+                                else if (protons == 10)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -546,7 +548,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Neon";
                                 }
 
-                                if (protons == 11)
+                                else if (protons == 11)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -554,7 +556,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Sodium";
                                 }
 
-                                if (protons == 12)
+                                else if (protons == 12)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -562,7 +564,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Magnesium";
                                 }
 
-                                if (protons == 13)
+                                else if (protons == 13)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -570,7 +572,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Aluminium";
                                 }
 
-                                if (protons == 14)
+                                else if (protons == 14)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -578,7 +580,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Silicon";
                                 }
 
-                                if (protons == 15)
+                                else if (protons == 15)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -586,7 +588,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Phosphorus";
                                 }
 
-                                if (protons == 16)
+                                else if (protons == 16)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -594,7 +596,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Sulfur";
                                 }
 
-                                if (protons == 17)
+                                else if (protons == 17)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -602,7 +604,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Chlorine";
                                 }
 
-                                if (protons == 18)
+                                else if (protons == 18)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -610,7 +612,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Argon";
                                 }
 
-                                if (protons == 19)
+                                else if (protons == 19)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -618,7 +620,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Potassium";
                                 }
 
-                                if (protons == 20)
+                                else if (protons == 20)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -626,7 +628,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Calcium";
                                 }
 
-                                if (protons == 21)
+                                else if (protons == 21)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -634,7 +636,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Scandium";
                                 }
 
-                                if (protons == 22)
+                                else if (protons == 22)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -642,7 +644,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Titanium";
                                 }
 
-                                if (protons == 23)
+                                else if (protons == 23)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -650,7 +652,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Vanadium";
                                 }
 
-                                if (protons == 24)
+                                else if (protons == 24)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -658,7 +660,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Chromium";
                                 }
 
-                                if (protons == 25)
+                                else if (protons == 25)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -666,7 +668,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Manganese";
                                 }
 
-                                if (protons == 26)
+                                else if (protons == 26)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -674,7 +676,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Iron";
                                 }
 
-                                if (protons == 27)
+                                else if (protons == 27)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -682,7 +684,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Cobalt";
                                 }
 
-                                if (protons == 28)
+                                else if (protons == 28)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -690,7 +692,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Nickel";
                                 }
 
-                                if (protons == 29)
+                                else if (protons == 29)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -698,7 +700,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Copper";
                                 }
 
-                                if (protons == 30)
+                                else if (protons == 30)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -706,7 +708,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Zinc";
                                 }
 
-                                if (protons == 31)
+                                else if (protons == 31)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -714,7 +716,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Gallium";
                                 }
 
-                                if (protons == 32)
+                                else if (protons == 32)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -722,7 +724,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Germanium";
                                 }
 
-                                if (protons == 33)
+                                else if (protons == 33)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -730,7 +732,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Arsenic";
                                 }
 
-                                if (protons == 34)
+                                else if (protons == 34)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -738,7 +740,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Selenium";
                                 }
 
-                                if (protons == 35)
+                                else if (protons == 35)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -746,7 +748,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Bromine";
                                 }
 
-                                if (protons == 36)
+                                else if (protons == 36)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -754,7 +756,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Krypton";
                                 }
 
-                                if (protons == 37)
+                                else if (protons == 37)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -762,7 +764,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Rubidium";
                                 }
 
-                                if (protons == 38)
+                                else if (protons == 38)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -770,7 +772,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Strontium";
                                 }
 
-                                if (protons == 39)
+                                else if (protons == 39)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -778,7 +780,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Yttrium";
                                 }
 
-                                if (protons == 40)
+                                else if (protons == 40)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -786,7 +788,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Zirconium,";
                                 }
 
-                                if (protons == 41)
+                                else if (protons == 41)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -794,7 +796,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Niobium";
                                 }
 
-                                if (protons == 42)
+                                else if (protons == 42)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -802,7 +804,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Molybdenum";
                                 }
 
-                                if (protons == 43)
+                                else if (protons == 43)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -810,7 +812,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Technetium";
                                 }
 
-                                if (protons == 44)
+                                else if (protons == 44)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -818,7 +820,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Ruthenium";
                                 }
 
-                                if (protons == 45)
+                                else if (protons == 45)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -826,7 +828,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Rhodium";
                                 }
 
-                                if (protons == 46)
+                                else if (protons == 46)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -834,7 +836,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Palladium";
                                 }
 
-                                if (protons == 47)
+                                else if (protons == 47)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -842,7 +844,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Silver";
                                 }
 
-                                if (protons == 48)
+                                else if (protons == 48)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -850,7 +852,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Cadmium";
                                 }
 
-                                if (protons == 49)
+                                else if (protons == 49)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -858,7 +860,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Indium";
                                 }
 
-                                if (protons == 50)
+                                else if (protons == 50)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -866,7 +868,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Tin";
                                 }
 
-                                if (protons == 51)
+                                else if (protons == 51)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -874,7 +876,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Antimony";
                                 }
 
-                                if (protons == 52)
+                                else if (protons == 52)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -882,7 +884,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Tellurium";
                                 }
 
-                                if (protons == 53)
+                                else if (protons == 53)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -890,7 +892,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Iodine";
                                 }
 
-                                if (protons == 54)
+                                else if (protons == 54)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -898,7 +900,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Xenon";
                                 }
 
-                                if (protons == 55)
+                                else if (protons == 55)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -906,7 +908,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Caesium";
                                 }
 
-                                if (protons == 56)
+                                else if (protons == 56)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -914,7 +916,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Barium";
                                 }
 
-                                if (protons == 57)
+                                else if (protons == 57)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -922,202 +924,206 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Lanthanum";
                                 }
 
-                                if (protons == 58) {
+                                else if (protons == 58) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Cerium");
                                     element = "Cerium";
                                 }
 
-                                if (protons == 59) {
+                                else if (protons == 59) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Praseodymium");
                                     element = "Praseodymium";
                                 }
 
-                                if (protons == 60) {
+                                else if (protons == 60) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Neodymium");
                                     element = "Neodymium";
                                 }
 
-                                if (protons == 61) {
+                                else if (protons == 61) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Promethium");
                                     element = "	Promethium	";
                                 }
 
-                                if (protons == 62) {
+                                else if (protons == 62) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Samarium");
                                     element = "Samarium";
                                 }
 
-                                if (protons == 63) {
+                                else if (protons == 63) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Europium");
                                     element = "Europium";
                                 }
 
-                                if (protons == 64) {
+                                else if (protons == 64) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Gadolinium");
                                     element = "Gadolinium";
                                 }
 
-                                if (protons == 65) {
+                                else if (protons == 65) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Terbium");
                                     element = "Terbium";
                                 }
 
-                                if (protons == 66) {
+                                else if (protons == 66) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Dysprosium");
                                     element = "Dysprosium";
                                 }
 
-                                if (protons == 67) {
+                                else if (protons == 67) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Holmium");
                                     element = "Holmium";
                                 }
 
-                                if (protons == 68) {
+                                else if (protons == 68) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Erbium");
                                     element = "Erbium";
                                 }
 
-                                if (protons == 69) {
+                                else if (protons == 69) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Thulium");
                                     element = "Thulium";
                                 }
 
-                                if (protons == 70) {
+                                else if (protons == 70) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Ytterbium");
                                     element = "Ytterbium";
                                 }
 
-                                if (protons == 71) {
+                                else if (protons == 71) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Lutetium");
                                     element = "Lutetium";
                                 }
 
-                                if (protons == 72) {
+                                else if (protons == 72) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Hafnium");
                                     element = "Hafnium";
                                 }
 
-                                if (protons == 73) {
+                                else if (protons == 73) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Tantalum");
                                     element = "Tantalum";
                                 }
 
-                                if (protons == 74) {
+                                else if (protons == 74) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Tungsten");
                                     element = "Tungsten";
                                 }
 
-                                if (protons == 75) {
+                                else if (protons == 75) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Rhenium");
                                     element = "Rhenium";
                                 }
 
-                                if (protons == 76) {
+                                else if (protons == 76) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Osmium");
                                     element = "Osmium";
                                 }
 
-                                if (protons == 77) {
+                                else if (protons == 77) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Iridium");
                                     element = "Iridium";
                                 }
 
-                                if (protons == 78) {
+                                else if (protons == 78) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Platinum");
                                     element = "Platinum";
                                 }
 
-                                if (protons == 79) {
+                                else if (protons == 79) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Gold");
                                     element = "Gold";
                                 }
 
-                                if (protons == 80) {
+                                else if (protons == 80) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Mercury");
                                     element = "Mercury";
                                 }
 
-                                if (protons == 81) {
+                                else if (protons == 81) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Thallium");
                                     element = "Thallium";
                                 }
 
-                                if (protons == 82) {
+                                else if (protons == 82) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Lead");
                                     element = "Lead";
                                 }
 
-                                if (protons == 83) {
+                                else if (protons == 83) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Bismuth");
                                     element = "Bismuth";
                                 }
 
-                                if (protons == 84) {
+                                else if (protons == 84) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Polonium");
                                     element = "Polonium";
                                 }
 
-                                if (protons == 85) {
+                                else if (protons == 85) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Astatine");
                                     element = "Astatine";
                                 }
 
-                                if (protons == 86) {
+                                else if (protons == 86) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Radon");
                                     element = "Radon";
                                 }
 
-                                if (protons == 87) {
+                                else if (protons == 87) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Francium");
                                     element = "Francium";
                                 }
 
-                                if (protons == 88) {
+                                else if (protons == 88) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Radium");
                                     element = "Radium";
                                 }
 
-                                if (protons == 89) {
+                                else if (protons == 89) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Actinium");
                                     element = "Actinium";
                                 }
 
-                                if (protons == 90) {
+                                else if (protons == 90) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Thorium");
                                     element = "Thorium";
+                                }
+                                
+                                else {
+                                    elementbutton.setText("Unknown");
                                 }
                             }
                             break;
