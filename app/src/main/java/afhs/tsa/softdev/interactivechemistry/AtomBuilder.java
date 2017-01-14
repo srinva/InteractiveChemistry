@@ -19,6 +19,7 @@ public class AtomBuilder extends AppCompatActivity {
     String element; //String value of element name, will be displayed on button
     TextView drop, state, estate, nstate, atomstatus, charge;
     ImageView pro, neu, ele;
+    Button elementbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +46,7 @@ public class AtomBuilder extends AppCompatActivity {
         ele = (ImageView) findViewById(R.id.imageView);
         pro = (ImageView) findViewById(R.id.imageView2);
         neu = (ImageView) findViewById(R.id.imageView3);
+        elementbutton = (Button)findViewById(R.id.elementbutton);
 
 
         ele.setOnLongClickListener(longClickListener);
@@ -1121,7 +1123,10 @@ public class AtomBuilder extends AppCompatActivity {
                                     elementbutton.setText("Thorium");
                                     element = "Thorium";
                                 }
-                                
+
+                                else{
+                                    elementbutton.setText("Unknown");
+                                }
 
                             }
                             break;
