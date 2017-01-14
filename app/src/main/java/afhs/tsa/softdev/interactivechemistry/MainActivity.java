@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
                 dictionary.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
-                        startActivity(new Intent(MainActivity.this, DictionaryActivity.class));
+                        startActivity(new Intent(MainActivity.this, ElementIndexActivity.class));
                     }
                 });
 

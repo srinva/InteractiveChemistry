@@ -1122,9 +1122,7 @@ public class AtomBuilder extends AppCompatActivity {
                                     element = "Thorium";
                                 }
                                 
-                                else {
-                                    elementbutton.setText("Unknown");
-                                }
+
                             }
                             break;
                         }

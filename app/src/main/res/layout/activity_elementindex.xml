@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="afhs.tsa.softdev.interactivechemistry.DictionaryActivity">
+    tools:context="afhs.tsa.softdev.interactivechemistry.ElementIndexActivity">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -17,6 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <Button
             android:text="Hydrogen"

@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".AtomBuilder" />
         <activity android:name=".ElementInformation" />
-        <activity android:name=".DictionaryActivity"></activity>
+        <activity android:name=".ElementIndexActivity"></activity>
     </application>
 
 </manifest>
