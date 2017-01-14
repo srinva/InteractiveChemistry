@@ -43,71 +43,56 @@ public class ElementInformation extends AppCompatActivity {
             elementInfoBottom.setText("Blah Blah Blah");            //Each element has different information which is why there is a if statement for each one
             elementName.setText("Hydrogen");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 2) {
+        }else if (protons == 2) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Helium");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 3) {
+        }else if (protons == 3) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Lithium");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 4) {
+        }else if (protons == 4) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Beryllium");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 5) {
+        }else if (protons == 5) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Boron");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 6) {
+        }else if (protons == 6) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Carbon");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 7) {
+        }else if (protons == 7) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Nitrogen");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 8) {
+        }else if (protons == 8) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Oxygen");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 9) {
+        }else if (protons == 9) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Fluorine");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
-        if (protons == 10) {
+        }else if (protons == 10) {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");
             elementInfoBottom.setText("Blah Blah Blah");
             elementName.setText("Neon");
             elementPicture.setImageResource(R.drawable.homebutton);
-        }
-
+        } else { 
+            elementInfoTop.setText("I don't recognize this element");
+            elementInfoBottom.setText("Try a different number of Protons!");
+            elementName.setText("???");
+            elementPicture.setImageResource(R.drawable.homebutton);
 
     }
 }
