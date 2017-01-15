@@ -29,7 +29,15 @@ public class ElementIndexActivity extends AppCompatActivity {
         String[] values = new String[] {
                 "Hydrogen",
                 "Helium",
-                "Lithium"
+                "Lithium",
+                "Beryllium",
+                "Boron",
+                "Carbon",
+                "Nitrogen",
+                "Oxygen",
+                "Fluorine",
+                "Neon",
+                "Sodium"
         };
 
 
@@ -62,21 +70,66 @@ public class ElementIndexActivity extends AppCompatActivity {
                     Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
                     dictionaryValues.putExtra("protons", 1);
                     startActivity(dictionaryValues);
-
                 }
 
                 if (value == "Helium") {
                     Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
                     dictionaryValues.putExtra("protons", 2);
                     startActivity(dictionaryValues);
-
                 }
 
                 if (value == "Lithium") {
                     Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
                     dictionaryValues.putExtra("protons", 3);
                     startActivity(dictionaryValues);
+                }
 
+                if (value == "Beryllium") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 4);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Boron") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 5);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Carbon") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 6);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Nitrogen") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 7);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Oxygen") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 8);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Fluorine") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 9);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Neon") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 10);
+                    startActivity(dictionaryValues);
+                }
+
+                if (value == "Sodium") {
+                    Intent dictionaryValues = new Intent(ElementIndexActivity.this, ElementInformation.class);
+                    dictionaryValues.putExtra("protons", 11);
+                    startActivity(dictionaryValues);
                 }
             }
         });

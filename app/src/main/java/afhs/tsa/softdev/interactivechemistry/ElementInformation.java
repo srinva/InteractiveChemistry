@@ -45,7 +45,7 @@ public class ElementInformation extends AppCompatActivity {
             elementInfoTop.setText("jhdgj;kahs;gjhasfd");           //This is the information for each element
             elementInfoBottom.setText("Blah Blah Blah");            //Each element has different information which is why there is a if statement for each one
             elementName.setText("Hydrogen");
-            elementPicture.setImageResource(R.drawable.homebutton);
+            elementPicture.setImageResource(R.drawable.hydrogen);
         }
 
         if (protons == 2 || protons2 == 2) {
@@ -110,6 +110,14 @@ public class ElementInformation extends AppCompatActivity {
             elementName.setText("Neon");
             elementPicture.setImageResource(R.drawable.homebutton);
         }
+
+        if (protons == 11 || protons2 == 11) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Sodium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
 
 
     }
