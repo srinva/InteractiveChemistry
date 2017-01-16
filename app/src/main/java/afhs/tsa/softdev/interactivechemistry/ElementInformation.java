@@ -22,9 +22,20 @@ public class ElementInformation extends AppCompatActivity {
             finish();
         }
     };
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_element_information);
+
+        Button backElementInfo = (Button)findViewById(R.id.backElementInfo);
+
+        backElementInfo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         Bundle extras = getIntent().getExtras(); //This is for saving proton, neutron, and electron vals
         int protons = (extras.getInt("PROTONS")); //This is for saving proton, neutron, and electron vals
@@ -134,6 +145,138 @@ public class ElementInformation extends AppCompatActivity {
             elementPicture.setImageResource(R.drawable.homebutton);
         }
 
+        else if (protons == 12 || protons2 == 12) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Magnesium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 13 || protons2 == 13) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Aluminium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 14 || protons2 == 14) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Silicon");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 15 || protons2 == 15) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Phosphorus");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 16 || protons2 == 16) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Sulfur");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 17 || protons2 == 17) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Chlorine");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 18 || protons2 == 18) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Argon");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 19 || protons2 == 19) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Potassium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 20 || protons2 == 20) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Calcium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 21 || protons2 == 21) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Scandium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 22 || protons2 == 22) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Titanium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 23 || protons2 == 23) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Vanadium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 24 || protons2 == 24) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Chromium");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 25 || protons2 == 25) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Manganese");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 26 || protons2 == 26) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Iron");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 27 || protons2 == 27) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Cobalt");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 28 || protons2 == 28) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Nickel");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 29 || protons2 == 29) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Copper");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
+
+        else if (protons == 30 || protons2 == 30) {
+            elementInfoTop.setText("jhdgj;kahs;gjhasfd");
+            elementInfoBottom.setText("Blah Blah Blah");
+            elementName.setText("Zinc");
+            elementPicture.setImageResource(R.drawable.homebutton);
+        }
 
 
     }
