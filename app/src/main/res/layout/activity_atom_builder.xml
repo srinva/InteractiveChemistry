@@ -21,27 +21,6 @@
         android:layout_centerHorizontal="true" />
 
 
-    <TextView
-        android:text="Nucleus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="94dp"
-        android:id="@+id/drop"
-        android:background="@color/colorPrimaryDark"
-        android:padding="20dp"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Unknown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/elementbutton"
-        android:layout_marginBottom="48dp"
-        android:layout_above="@+id/drop"
-        android:layout_alignParentEnd="true" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,14 +41,53 @@
         android:layout_below="@+id/imageView2"
         android:layout_alignStart="@+id/imageView2" />
 
-    <ImageView
+    <Button
+        android:layout_height="35dp"
+        android:id="@+id/atombuilderback"
+        android:background="@drawable/homebutton"
+        android:elevation="0dp"
+        android:layout_width="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Neutrons:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/finalelectron"
-        android:padding="15dp"
-        android:id="@+id/imageView"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_alignStart="@+id/estate" />
+        android:id="@+id/nstate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
+        android:layout_alignBottom="@+id/atomstatus"
+        android:layout_toEndOf="@+id/drop"
+        android:layout_alignTop="@+id/atomstatus" />
+
+    <TextView
+        android:text="Nucleus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drop"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:layout_below="@+id/atomstatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp" />
+
+    <TextView
+        android:text="Your atom is not charged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charge"
+        android:layout_alignBottom="@+id/elementbutton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Unstable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/atomstate"
+        android:layout_toStartOf="@+id/atomstatus"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignTop="@+id/elementbutton" />
 
     <TextView
         android:text="Electrons:"
@@ -78,33 +96,17 @@
         android:id="@+id/estate"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
         android:layout_below="@+id/imageView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="19dp" />
+        android:layout_toStartOf="@+id/imageView2" />
 
-    <TextView
-        android:text="Neutrons:"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/nstate"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
-        android:layout_alignTop="@+id/atomstatus"
-        android:layout_alignStart="@+id/elementbutton" />
-
-    <TextView
-        android:text="Your atom is unstable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/atomstate"
-        android:layout_alignBottom="@+id/elementbutton"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="Your atom is not charged"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/charge"
-        android:layout_below="@+id/atomstate"
-        android:layout_alignParentStart="true" />
+        app:srcCompat="@drawable/finalelectron"
+        android:padding="15dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/estate"
+        android:layout_marginStart="8dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -113,15 +115,24 @@
         android:padding="15dp"
         android:id="@+id/imageView3"
         android:layout_above="@+id/nstate"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_alignStart="@+id/nstate" />
+
+    <TextView
+        android:text="Your atom is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/atomstate"
+        android:layout_alignBottom="@+id/atomstate"
+        android:layout_toStartOf="@+id/textView3" />
 
     <Button
-        android:layout_height="75px"
-        android:id="@+id/atombuilderback"
-        android:background="@drawable/homebutton"
-        android:elevation="0dp"
-        android:layout_width="75px"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:text="Unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/elementbutton"
+        android:layout_below="@+id/drop"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="38dp" />
 
 </RelativeLayout>

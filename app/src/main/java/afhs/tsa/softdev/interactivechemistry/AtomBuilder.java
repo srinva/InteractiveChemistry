@@ -2,6 +2,7 @@ package afhs.tsa.softdev.interactivechemistry;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
@@ -149,16 +150,19 @@ public class AtomBuilder extends AppCompatActivity {
                             nstate.setText("Neutrons: " + neutrons);
 
                             if (protons == 1) {
-                                atomstatus.setText("Your atom is stable");
+                                atomstatus.setText("Stable");
+                                atomstatus.setTextColor(Color.GREEN);
                             }
 
                             if (protons == 2) {
                                 int heliume = 2;
                                 if (neutrons == heliume) {
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
+                                    atomstatus.setTextColor(Color.GREEN);
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
+                                    atomstatus.setTextColor(Color.RED);
                                 }
                             }
 
@@ -166,20 +170,24 @@ public class AtomBuilder extends AppCompatActivity {
                                 int lithiume1 = 3;
                                 int lithiume2 = 4;
                                 if (neutrons == lithiume1 || neutrons == lithiume2) {
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
+                                    atomstatus.setTextColor(Color.GREEN);
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
+                                    atomstatus.setTextColor(Color.RED);
                                 }
                             }
 
                             if (protons == 4) {
                                 int berylliumn = 5;
                                 if (neutrons == berylliumn){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
+                                    atomstatus.setTextColor(Color.GREEN);
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
+                                    atomstatus.setTextColor(Color.RED);
                                 }
                             }
 
@@ -187,10 +195,11 @@ public class AtomBuilder extends AppCompatActivity {
                                 int boronn1 = 5;
                                 int boronn2 = 6;
                                 if (neutrons == boronn1 || neutrons == boronn2){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
+                                    atomstatus.setTextColor(Color.GREEN);
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -198,10 +207,10 @@ public class AtomBuilder extends AppCompatActivity {
                                 int carbonn1 = 6;
                                 int carbonn2 = 7;
                                 if (neutrons == carbonn1 || neutrons == carbonn2){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -209,10 +218,10 @@ public class AtomBuilder extends AppCompatActivity {
                                 int nitrogenn1 = 7;
                                 int nitrogenn2 = 8;
                                 if (neutrons == nitrogenn1 || neutrons == nitrogenn2){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -221,20 +230,20 @@ public class AtomBuilder extends AppCompatActivity {
                                 int oxygenn2 = 9;
                                 int oxygenn3 = 10;
                                 if (neutrons == oxygenn1 || neutrons == oxygenn2 || neutrons == oxygenn3){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
                             if (protons == 9) {
                                 int fluorine = 10;
                                 if (neutrons == fluorine){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -243,20 +252,20 @@ public class AtomBuilder extends AppCompatActivity {
                                 int neonn2 = 11;
                                 int neonn3 = 12;
                                 if (neutrons == neonn1 || neutrons == neonn2 || neutrons == neonn3){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
                             if (protons == 11) {
                                 int sodiumn = 12;
                                 if (neutrons == sodiumn ){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -265,20 +274,20 @@ public class AtomBuilder extends AppCompatActivity {
                                 int magnesiumn2 = 13;
                                 int magnesiumn3 = 14;
                                 if (neutrons == magnesiumn1 || neutrons == magnesiumn2 || neutrons == magnesiumn3){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
                             if (protons == 13) {
                                 int aluminiumn = 14;
                                 if (neutrons == aluminiumn){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -287,20 +296,20 @@ public class AtomBuilder extends AppCompatActivity {
                                 int siliconn2 = 15;
                                 int siliconn3 = 16;
                                 if (neutrons == siliconn1 || neutrons == siliconn2 || neutrons == siliconn3){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
                             if (protons == 15) {
                                 int phosphorusn = 16;
                                 if (neutrons == phosphorusn){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -309,20 +318,20 @@ public class AtomBuilder extends AppCompatActivity {
                                 int sulfurn2 = 17;
                                 int sulfurn3 = 18;
                                 if (neutrons == sulfurn1 || neutrons == sulfurn2 || neutrons == sulfurn3){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
                             if (protons == 17) {
                                 int chlorinen = 18;
                                 if (neutrons == chlorinen){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -331,10 +340,10 @@ public class AtomBuilder extends AppCompatActivity {
                                 int argonn2 = 20;
                                 int argonn3 = 22;
                                 if (neutrons == argonn1 || neutrons == argonn2 || neutrons == argonn3){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -342,10 +351,10 @@ public class AtomBuilder extends AppCompatActivity {
                                 int potassiumn1 = 20;
                                 int potassiumn2 = 22;
                                 if (neutrons == potassiumn1 || neutrons == potassiumn2){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
@@ -356,20 +365,20 @@ public class AtomBuilder extends AppCompatActivity {
                                 int calciumn4 = 24;
                                 int calciumn5 = 26;
                                 if (neutrons == calciumn1 || neutrons == calciumn2 || neutrons == calciumn3 || neutrons == calciumn4 || neutrons == calciumn5){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
                             if (protons == 21) {
                                 int scandiumn = 24;
                                 if (neutrons == scandiumn){
-                                    atomstatus.setText("Your atom is stable");
+                                    atomstatus.setText("Stable");
                                 }
                                 else{
-                                    atomstatus.setText("Your atom is unstable");
+                                    atomstatus.setText("Unstable");
                                 }
                             }
 
