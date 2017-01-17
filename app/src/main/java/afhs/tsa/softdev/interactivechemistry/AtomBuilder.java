@@ -5,11 +5,14 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.text.TextWatcher;
 
 public class AtomBuilder extends AppCompatActivity {
 
@@ -21,6 +24,7 @@ public class AtomBuilder extends AppCompatActivity {
     TextView drop, state, estate, nstate, atomstatus, charge;
     ImageView pro, neu, ele;
     Button elementbutton;
+    EditText electronEditText, protonEditText, neutronEditText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,12 +52,73 @@ public class AtomBuilder extends AppCompatActivity {
         pro = (ImageView) findViewById(R.id.imageView2);
         neu = (ImageView) findViewById(R.id.imageView3);
         elementbutton = (Button)findViewById(R.id.elementbutton);
-
+        electronEditText = (EditText)findViewById(R.id.electronEditText);
+        protonEditText = (EditText)findViewById(R.id.protonEditText);
+        neutronEditText = (EditText) findViewById(R.id.neutronEditText);
 
         ele.setOnLongClickListener(longClickListener);
         pro.setOnLongClickListener(longClickListener);
         neu.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
+        electronEditText.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable e) {
+
+            }
+
+            public void beforeTextChanged(CharSequence e, int start, int count, int after){
+
+            }
+
+            public void onTextChanged(CharSequence e, int start, int before, int count) {
+                electrons = Integer.parseInt(e.toString());
+                estate.setText("Electrons: "+electrons);
+                if (electrons == protons) {
+                    charge.setText("Your atom is neutrally charged");
+                } else if (electrons > protons) {
+                    charge.setText("Your atom is negatively charged");
+                } else {
+                    charge.setText("Your atom is positively charged");
+                }
+            }
+        });
+        protonEditText.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable p) {
+
+            }
+
+            public void beforeTextChanged(CharSequence p, int start, int count, int after){
+
+            }
+
+            public void onTextChanged(CharSequence p, int start, int before, int count) {
+                protons = Integer.parseInt(p.toString());
+                state.setText("Protons: "+protons);
+                if (electrons == protons) {
+                    charge.setText("Your atom is neutrally charged");
+                } else if (electrons > protons) {
+                    charge.setText("Your atom is negatively charged");
+                } else {
+                    charge.setText("Your atom is positively charged");
+                }
+            }
+        });
+        neutronEditText.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable n) {
+
+            }
+
+            public void beforeTextChanged(CharSequence n, int start, int count, int after){
+
+            }
+
+            public void onTextChanged(CharSequence n, int start, int before, int count) {
+                neutrons = Integer.parseInt(n.toString());
+                nstate.setText("Neutrons: "+neutrons);
+            }
+        });
 
     }
 

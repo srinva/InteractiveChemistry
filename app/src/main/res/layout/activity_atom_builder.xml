@@ -135,4 +135,35 @@
         android:layout_toEndOf="@+id/textView3"
         android:layout_marginTop="38dp" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/electronEditText"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/atomstatus"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/electronEditText"
+        android:layout_alignStart="@+id/atomstatus"
+        android:id="@+id/protonEditText"
+        android:layout_alignEnd="@+id/atomstatus" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/protonEditText"
+        android:layout_alignStart="@+id/nstate"
+        android:id="@+id/neutronEditText"
+        android:layout_alignEnd="@+id/nstate" />
+
 </RelativeLayout>
