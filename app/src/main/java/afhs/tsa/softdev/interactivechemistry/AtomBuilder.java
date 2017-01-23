@@ -60,6 +60,7 @@ public class AtomBuilder extends AppCompatActivity {
         pro.setOnLongClickListener(longClickListener);
         neu.setOnLongClickListener(longClickListener);
         drop.setOnDragListener(dragListener);
+
         electronEditText.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable e) {
@@ -133,6 +134,7 @@ public class AtomBuilder extends AppCompatActivity {
                 return true;
             }
         };
+
 
         View.OnDragListener dragListener = new View.OnDragListener() {
             @Override
@@ -467,6 +469,7 @@ public class AtomBuilder extends AppCompatActivity {
 
                             if (view3.getId() == R.id.imageView2) {
 
+
                                 protons++;
                                 if (electrons == protons) {
                                     charge.setText("Your atom is neutrally charged");
@@ -477,6 +480,8 @@ public class AtomBuilder extends AppCompatActivity {
                                 }
 
                                 state.setText("Protons: " + protons);
+
+
 
                                 if (protons == 1) {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -1196,6 +1201,174 @@ public class AtomBuilder extends AppCompatActivity {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
                                     elementbutton.setText("Thorium");
                                     element = "Thorium";
+                                }
+
+                                else if (protons == 91) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Protactinium");
+                                    element = "Protactinium";
+                                }
+
+                                else if (protons == 92) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Uranium");
+                                    element = "Uranium";
+                                }
+
+                                else if (protons == 93) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Neptunium");
+                                    element = "Neptunium";
+                                }
+
+                                else if (protons == 94) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Plutonium");
+                                    element = "Plutonium";
+                                }
+
+                                else if (protons == 95) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Americium");
+                                    element = "Americium";
+                                }
+
+                                else if (protons == 96) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Curium");
+                                    element = "Curium";
+                                }
+
+                                else if (protons == 97) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Berkelium");
+                                    element = "Berkelium";
+                                }
+
+                                else if (protons == 98) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Californium");
+                                    element = "Californium";
+                                }
+
+                                else if (protons == 99) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Einsteinium");
+                                    element = "Einsteinium";
+                                }
+
+                                else if (protons == 100) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Fermium");
+                                    element = "Fermium";
+                                }
+
+                                else if (protons == 101) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Mendelevium");
+                                    element = "Mendelevium";
+                                }
+
+                                else if (protons == 102) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Nobelium");
+                                    element = "Nobelium";
+                                }
+
+                                else if (protons == 103) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Lawrencium");
+                                    element = "Lawrencium";
+                                }
+
+                                else if (protons == 104) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Rutherfordium");
+                                    element = "Rutherfordium";
+                                }
+
+                                else if (protons == 105) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Dubnium");
+                                    element = "Dubnium";
+                                }
+
+                                else if (protons == 106) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Seaborgium");
+                                    element = "Seaborgium";
+                                }
+
+                                else if (protons == 107) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Bohrium");
+                                    element = "Bohrium";
+                                }
+
+                                else if (protons == 108) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Hassium");
+                                    element = "Hassium";
+                                }
+
+                                else if (protons == 109) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Meitnerium");
+                                    element = "Meitnerium";
+                                }
+
+                                else if (protons == 110) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Darmstadtium");
+                                    element = "Darmstadtium";
+                                }
+
+                                else if (protons == 111) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Roentgenium");
+                                    element = "Roentgenium";
+                                }
+
+                                else if (protons == 112) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Copernicium");
+                                    element = "Copernicium";
+                                }
+
+                                else if (protons == 113) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Nihonium");
+                                    element = "Nihonium";
+                                }
+
+                                else if (protons == 114) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Flerovium");
+                                    element = "Flerovium";
+                                }
+
+                                else if (protons == 115) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Moscovium");
+                                    element = "Moscovium";
+                                }
+
+                                else if (protons == 116) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Livermorium");
+                                    element = "Livermorium";
+                                }
+
+                                else if (protons == 117) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Tennessine");
+                                    element = "Tennessine";
+                                }
+
+                                else if (protons == 118) {
+                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
+                                    elementbutton.setText("Oganesson");
+                                    element = "Oganesson";
                                 }
 
                                 else{
