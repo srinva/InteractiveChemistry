@@ -224,18 +224,6 @@ public class AtomBuilder extends AppCompatActivity {
 
                             nstate.setText("Neutrons: " + neutrons);
 
-                            int elementStatus = new ElementSorter().neutronSorter();
-
-
-                            if(neutronStableCount == neutrons){
-                                atomstatus.setText("Stable");
-                                atomstatus.setTextColor(Color.GREEN);
-                            }else{
-                                atomstatus.setText("Unstable");
-                                atomstatus.setTextColor(Color.RED);
-                            }
-
-
 
                         }
 

@@ -1,6 +1,7 @@
 package afhs.tsa.softdev.interactivechemistry;
 
 import android.content.Intent;
+import android.os.Bundle;
 
 
 /**
@@ -40,17 +41,12 @@ public class ElementSorter {
         }
     }
 
-    public String neutronSorter(int neutronCount){
-        switch (neutronCount){
-            case 1:
-                return "0";
-            case 2:
-                return "2";
-            case 3:
-                return "4";
-            default:
-                return "Unknown";
+    public String neutronSorter(int protonCount, int neutronCount){
+        switch (protonCount){
 
+        }
+        switch (neutronCount){
+            
         }
     }
 }
