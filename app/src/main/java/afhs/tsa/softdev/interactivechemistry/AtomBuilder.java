@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.Button;
@@ -94,15 +95,22 @@ public class AtomBuilder extends AppCompatActivity {
             }
 
             public void onTextChanged(CharSequence p, int start, int before, int count) {
-                protons = Integer.parseInt(p.toString());
-                state.setText("Protons: "+protons);
-                if (electrons == protons) {
-                    charge.setText("Your atom is neutrally charged");
-                } else if (electrons > protons) {
-                    charge.setText("Your atom is negatively charged");
-                } else {
-                    charge.setText("Your atom is positively charged");
+                try {
+                    protons = Integer.parseInt(p.toString());
+                }catch(Exception e){
+                    Log.e("InteractiveChemistry",e.getMessage());
+                    return;
                 }
+                state.setText("Protons: "+protons);
+                String elementName = new ElementSorter().protonSorter(protons);
+                Button button = ((Button) findViewById(R.id.elementbutton));
+                button.setText(elementName);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        save.putExtra("PROTONS", protons);
+                        startActivity(save);
+                    }
+                });
             }
         });
         neutronEditText.addTextChangedListener(new TextWatcher() {
@@ -478,158 +486,19 @@ public class AtomBuilder extends AppCompatActivity {
                                 } else {
                                     charge.setText("Your atom is positively charged");
                                 }
-
+                                    save.putExtra("PROTONS", protons);
+                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                        public void onClick(View v) {
+                                            startActivity(save);
+                                        }
+                                    });
                                 state.setText("Protons: " + protons);
 
+                                String elementName = new ElementSorter().protonSorter(protons);
+                                ((Button) findViewById(R.id.elementbutton)).setText(elementName);
 
-
-                                if (protons == 1) {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Hydrogen");
-                                    element = "Hydrogen";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 2) {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Helium");
-                                    element = "Helium";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 3) {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Lithium");
-                                    element = "Lithium";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 4)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Beryllium");
-                                    element = "Beryllium";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 5)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Boron");
-                                    element = "Boron";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 6)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Carbon");
-                                    element = "Carbon";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 7)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Nitrogen");
-                                    element = "Nitrogen";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 8)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Oxygen");
-                                    element = "Oxygen";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 9)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Flourine");
-                                    element = "Fluorine";
-
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                }
-
-                                else if (protons == 10)
-
-                                {
-                                    Button elementbutton = (Button) findViewById(R.id.elementbutton);
-                                    elementbutton.setText("Neon");
-                                    element = "Neon";
-                                }
-
-                                else if (protons == 11)
+                                if (protons == 11)
 
                                 {
                                     Button elementbutton = (Button) findViewById(R.id.elementbutton);
@@ -1370,11 +1239,6 @@ public class AtomBuilder extends AppCompatActivity {
                                     elementbutton.setText("Oganesson");
                                     element = "Oganesson";
                                 }
-
-                                else{
-                                    elementbutton.setText("Unknown");
-                                }
-
                             }
                             break;
                         }
