@@ -36,7 +36,7 @@
         android:text="Protons: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/atomstatus"
+        android:id="@+id/pstate"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
         android:layout_below="@+id/imageView2"
         android:layout_alignStart="@+id/imageView2" />
@@ -56,9 +56,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/nstate"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu"
-        android:layout_alignBottom="@+id/atomstatus"
+        android:layout_alignBottom="@+id/pstate"
         android:layout_toEndOf="@+id/drop"
-        android:layout_alignTop="@+id/atomstatus" />
+        android:layout_alignTop="@+id/pstate" />
 
     <TextView
         android:text="Nucleus"
@@ -68,7 +68,7 @@
         android:background="@color/colorPrimaryDark"
         android:padding="20dp"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        android:layout_below="@+id/atomstatus"
+        android:layout_below="@+id/pstate"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="107dp" />
 
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/atomstate"
-        android:layout_toStartOf="@+id/atomstatus"
+        android:layout_toStartOf="@+id/pstate"
         android:textColor="@android:color/holo_red_dark"
         android:layout_alignTop="@+id/elementbutton" />
 
@@ -142,7 +142,7 @@
         android:ems="10"
         android:id="@+id/electronEditText"
         android:layout_marginTop="17dp"
-        android:layout_below="@+id/atomstatus"
+        android:layout_below="@+id/pstate"
         android:layout_alignEnd="@+id/imageView"
         android:layout_alignStart="@+id/imageView" />
 
@@ -152,9 +152,9 @@
         android:inputType="number"
         android:ems="10"
         android:layout_alignTop="@+id/electronEditText"
-        android:layout_alignStart="@+id/atomstatus"
+        android:layout_alignStart="@+id/pstate"
         android:id="@+id/protonEditText"
-        android:layout_alignEnd="@+id/atomstatus" />
+        android:layout_alignEnd="@+id/pstate" />
 
     <EditText
         android:layout_width="wrap_content"

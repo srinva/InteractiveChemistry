@@ -45,7 +45,7 @@ public class AtomBuilder extends AppCompatActivity {
 
         drop = (TextView) findViewById(R.id.drop);
         estate = (TextView) findViewById(R.id.estate);
-        state = (TextView) findViewById(R.id.atomstatus);
+        state = (TextView) findViewById(R.id.pstate);
         nstate = (TextView) findViewById(R.id.nstate);
         atomstatus = (TextView)findViewById(R.id.atomstate);
         charge = (TextView)findViewById(R.id.charge);
@@ -224,238 +224,17 @@ public class AtomBuilder extends AppCompatActivity {
 
                             nstate.setText("Neutrons: " + neutrons);
 
-                            if (protons == 1) {
+                            int elementStatus = new ElementSorter().neutronSorter();
+
+
+                            if(neutronStableCount == neutrons){
                                 atomstatus.setText("Stable");
                                 atomstatus.setTextColor(Color.GREEN);
+                            }else{
+                                atomstatus.setText("Unstable");
+                                atomstatus.setTextColor(Color.RED);
                             }
 
-                            if (protons == 2) {
-                                int heliume = 2;
-                                if (neutrons == heliume) {
-                                    atomstatus.setText("Stable");
-                                    atomstatus.setTextColor(Color.GREEN);
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                    atomstatus.setTextColor(Color.RED);
-                                }
-                            }
-
-                            if (protons == 3) {
-                                int lithiume1 = 3;
-                                int lithiume2 = 4;
-                                if (neutrons == lithiume1 || neutrons == lithiume2) {
-                                    atomstatus.setText("Stable");
-                                    atomstatus.setTextColor(Color.GREEN);
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                    atomstatus.setTextColor(Color.RED);
-                                }
-                            }
-
-                            if (protons == 4) {
-                                int berylliumn = 5;
-                                if (neutrons == berylliumn){
-                                    atomstatus.setText("Stable");
-                                    atomstatus.setTextColor(Color.GREEN);
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                    atomstatus.setTextColor(Color.RED);
-                                }
-                            }
-
-                            if (protons == 5) {
-                                int boronn1 = 5;
-                                int boronn2 = 6;
-                                if (neutrons == boronn1 || neutrons == boronn2){
-                                    atomstatus.setText("Stable");
-                                    atomstatus.setTextColor(Color.GREEN);
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 6) {
-                                int carbonn1 = 6;
-                                int carbonn2 = 7;
-                                if (neutrons == carbonn1 || neutrons == carbonn2){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 7) {
-                                int nitrogenn1 = 7;
-                                int nitrogenn2 = 8;
-                                if (neutrons == nitrogenn1 || neutrons == nitrogenn2){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 8) {
-                                int oxygenn1 = 8;
-                                int oxygenn2 = 9;
-                                int oxygenn3 = 10;
-                                if (neutrons == oxygenn1 || neutrons == oxygenn2 || neutrons == oxygenn3){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 9) {
-                                int fluorine = 10;
-                                if (neutrons == fluorine){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 10) {
-                                int neonn1 = 10;
-                                int neonn2 = 11;
-                                int neonn3 = 12;
-                                if (neutrons == neonn1 || neutrons == neonn2 || neutrons == neonn3){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 11) {
-                                int sodiumn = 12;
-                                if (neutrons == sodiumn ){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 12) {
-                                int magnesiumn1 = 12;
-                                int magnesiumn2 = 13;
-                                int magnesiumn3 = 14;
-                                if (neutrons == magnesiumn1 || neutrons == magnesiumn2 || neutrons == magnesiumn3){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 13) {
-                                int aluminiumn = 14;
-                                if (neutrons == aluminiumn){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 14) {
-                                int siliconn1 = 14;
-                                int siliconn2 = 15;
-                                int siliconn3 = 16;
-                                if (neutrons == siliconn1 || neutrons == siliconn2 || neutrons == siliconn3){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 15) {
-                                int phosphorusn = 16;
-                                if (neutrons == phosphorusn){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 16) {
-                                int sulfurn1 = 16;
-                                int sulfurn2 = 17;
-                                int sulfurn3 = 18;
-                                if (neutrons == sulfurn1 || neutrons == sulfurn2 || neutrons == sulfurn3){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 17) {
-                                int chlorinen = 18;
-                                if (neutrons == chlorinen){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 18) {
-                                int argonn1 = 18;
-                                int argonn2 = 20;
-                                int argonn3 = 22;
-                                if (neutrons == argonn1 || neutrons == argonn2 || neutrons == argonn3){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 19) {
-                                int potassiumn1 = 20;
-                                int potassiumn2 = 22;
-                                if (neutrons == potassiumn1 || neutrons == potassiumn2){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 20) {
-                                int calciumn1 = 20;
-                                int calciumn2 = 22;
-                                int calciumn3 = 23;
-                                int calciumn4 = 24;
-                                int calciumn5 = 26;
-                                if (neutrons == calciumn1 || neutrons == calciumn2 || neutrons == calciumn3 || neutrons == calciumn4 || neutrons == calciumn5){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
-
-                            if (protons == 21) {
-                                int scandiumn = 24;
-                                if (neutrons == scandiumn){
-                                    atomstatus.setText("Stable");
-                                }
-                                else{
-                                    atomstatus.setText("Unstable");
-                                }
-                            }
 
 
                         }
@@ -477,24 +256,17 @@ public class AtomBuilder extends AppCompatActivity {
 
                             if (view3.getId() == R.id.imageView2) {
 
-
                                 protons++;
-                                if (electrons == protons) {
-                                    charge.setText("Your atom is neutrally charged");
-                                } else if (electrons > protons) {
-                                    charge.setText("Your atom is negatively charged");
-                                } else {
-                                    charge.setText("Your atom is positively charged");
-                                }
-                                    save.putExtra("PROTONS", protons);
-                                    Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
-                                    goToHydrogen.setOnClickListener(new View.OnClickListener() {
-                                        public void onClick(View v) {
-                                            startActivity(save);
-                                        }
-                                    });
-                                state.setText("Protons: " + protons);
 
+                                save.putExtra("PROTONS", protons);
+                                Button goToHydrogen = (Button) findViewById(R.id.elementbutton);
+                                goToHydrogen.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        startActivity(save);
+                                    }
+                                });
+
+                                state.setText("Protons: " + protons);
                                 String elementName = new ElementSorter().protonSorter(protons);
                                 ((Button) findViewById(R.id.elementbutton)).setText(elementName);
 

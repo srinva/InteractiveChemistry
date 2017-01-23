@@ -1,5 +1,8 @@
 package afhs.tsa.softdev.interactivechemistry;
 
+import android.content.Intent;
+
+
 /**
  * Created by Jason on 1/23/2017.
  */
@@ -34,6 +37,20 @@ public class ElementSorter {
                 return "Sodium";
             default:
                 return "Unknown";
+        }
+    }
+
+    public String neutronSorter(int neutronCount){
+        switch (neutronCount){
+            case 1:
+                return "0";
+            case 2:
+                return "2";
+            case 3:
+                return "4";
+            default:
+                return "Unknown";
+
         }
     }
 }
