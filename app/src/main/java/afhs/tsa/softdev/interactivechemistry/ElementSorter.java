@@ -40,13 +40,7 @@ public class ElementSorter {
                 return "Unknown";
         }
     }
-
-    public String neutronSorter(int protonCount, int neutronCount){
-        switch (protonCount){
-
-        }
-        switch (neutronCount){
-            
-        }
-    }
 }
+
+
+

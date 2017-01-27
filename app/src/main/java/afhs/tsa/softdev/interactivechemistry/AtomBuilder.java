@@ -64,24 +64,48 @@ public class AtomBuilder extends AppCompatActivity {
 
         electronEditText.addTextChangedListener(new TextWatcher() {
 
-            public void afterTextChanged(Editable e) {
+            public void afterTextChanged(Editable ee) {
 
             }
 
-            public void beforeTextChanged(CharSequence e, int start, int count, int after){
+            public void beforeTextChanged(CharSequence ee, int start, int count, int after){
 
             }
 
-            public void onTextChanged(CharSequence e, int start, int before, int count) {
-                electrons = Integer.parseInt(e.toString());
+            public void onTextChanged(CharSequence ee, int start, int before, int count) {
                 estate.setText("Electrons: "+electrons);
-                if (electrons == protons) {
-                    charge.setText("Your atom is neutrally charged");
-                } else if (electrons > protons) {
-                    charge.setText("Your atom is negatively charged");
-                } else {
-                    charge.setText("Your atom is positively charged");
+                try {
+                    electrons = Integer.parseInt(ee.toString());
+                }catch(Exception e){
+                    Log.e("InteractiveChemistry",e.getMessage());
+                    return;
                 }
+                String elementName = new ElementSorter().protonSorter(protons);
+                Button button = ((Button) findViewById(R.id.elementbutton));
+                button.setText(elementName);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        save.putExtra("PROTONS", protons);
+                        startActivity(save);
+                    }
+                });
+
+                if(neutrons >= 1) {
+                    if (protons != 0) {
+                        atomstatus.setText(elementName + " Isotope");
+                    } else {
+                        atomstatus.setText("Unknown");
+                    }
+                }
+                    if (electrons == protons) {
+                        charge.setText("Your atom is neutrally charged");
+                    } else if (electrons > protons) {
+                        charge.setText("Your atom is negatively charged");
+                    } else {
+                        charge.setText("Your atom is positively charged");
+                    }
+
+
             }
         });
         protonEditText.addTextChangedListener(new TextWatcher() {
@@ -111,6 +135,21 @@ public class AtomBuilder extends AppCompatActivity {
                         startActivity(save);
                     }
                 });
+                if(neutrons >= 1) {
+                    if (protons != 0) {
+                        atomstatus.setText(elementName + " Isotope");
+                    } else {
+                        atomstatus.setText("Unknown");
+                    }
+                }
+                    if (electrons == protons) {
+                        charge.setText("Your atom is neutrally charged");
+                    } else if (electrons > protons) {
+                        charge.setText("Your atom is negatively charged");
+                    } else {
+                        charge.setText("Your atom is positively charged");
+                    }
+
             }
         });
         neutronEditText.addTextChangedListener(new TextWatcher() {
@@ -124,8 +163,38 @@ public class AtomBuilder extends AppCompatActivity {
             }
 
             public void onTextChanged(CharSequence n, int start, int before, int count) {
-                neutrons = Integer.parseInt(n.toString());
+                try {
+                    neutrons = Integer.parseInt(n.toString());
+                }catch(Exception e){
+                    Log.e("InteractiveChemistry",e.getMessage());
+                    return;
+                }
+
                 nstate.setText("Neutrons: "+neutrons);
+                String elementName = new ElementSorter().protonSorter(protons);
+                Button button = ((Button) findViewById(R.id.elementbutton));
+                button.setText(elementName);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        save.putExtra("PROTONS", protons);
+                        startActivity(save);
+                    }
+                });
+
+                if(neutrons == neutrons) {
+                    if (protons != 0) {
+                        atomstatus.setText(elementName + " Isotope");
+                    } else {
+                        atomstatus.setText("Unknown");
+                    }
+                }
+                    if (electrons == protons) {
+                        charge.setText("Your atom is neutrally charged");
+                    } else if (electrons > protons) {
+                        charge.setText("Your atom is negatively charged");
+                    } else {
+                        charge.setText("Your atom is positively charged");
+                    }
             }
         });
 
@@ -222,9 +291,15 @@ public class AtomBuilder extends AppCompatActivity {
 
                             neutrons++;
 
+
                             nstate.setText("Neutrons: " + neutrons);
+                            String elementName = new ElementSorter().protonSorter(protons);
 
-
+                            if(neutrons != 0){
+                                atomstatus.setText(elementName+" Isotope");
+                            }else{
+                                atomstatus.setText("Unknown");
+                            }
                         }
 
                         if (view3.getId() == R.id.imageView) {
@@ -257,7 +332,13 @@ public class AtomBuilder extends AppCompatActivity {
                                 state.setText("Protons: " + protons);
                                 String elementName = new ElementSorter().protonSorter(protons);
                                 ((Button) findViewById(R.id.elementbutton)).setText(elementName);
-
+                                if(neutrons >= 1) {
+                                    if (protons != 0) {
+                                        atomstatus.setText(elementName + " Isotope");
+                                    } else {
+                                        atomstatus.setText("Unknown");
+                                    }
+                                }
                                 if (protons == 11)
 
                                 {

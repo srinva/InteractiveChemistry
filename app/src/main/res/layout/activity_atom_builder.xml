@@ -81,15 +81,6 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Unstable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/atomstate"
-        android:layout_toStartOf="@+id/pstate"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_alignTop="@+id/elementbutton" />
-
-    <TextView
         android:text="Electrons:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,15 +107,6 @@
         android:id="@+id/imageView3"
         android:layout_above="@+id/nstate"
         android:layout_alignStart="@+id/nstate" />
-
-    <TextView
-        android:text="Your atom is"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_alignBaseline="@+id/atomstate"
-        android:layout_alignBottom="@+id/atomstate"
-        android:layout_toStartOf="@+id/textView3" />
 
     <Button
         android:text="Unknown"
@@ -165,5 +147,13 @@
         android:layout_alignStart="@+id/nstate"
         android:id="@+id/neutronEditText"
         android:layout_alignEnd="@+id/nstate" />
+
+    <TextView
+        android:text="Unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/atomstate"
+        android:layout_alignTop="@+id/elementbutton"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
